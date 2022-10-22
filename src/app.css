@@ -2,9 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .header {
+        @apply md:text-5xl text-3xl mb-4 font-bold text-white;
+    }
+
+    .head2 {
+        @apply text-3xl mb-4 mt-8 font-bold text-white;
+    }
+
+    .head3 {
+        @apply text-2xl my-4;
+    }
+
+    .head4 {
+        @apply text-xl mt-4;
+    }
+
+    .list {
+        @apply mb-4 leading-relaxed hover:underline hover:text-white;
+    }
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/fonts/roboto-mono-v22-latin-300.woff2'), url('https://fonts.gstatic.com/s/robotomono/v22/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/roboto-mono-v22-latin-regular.woff2'), url('https://fonts.gstatic.com/s/robotomono/v22/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/roboto-mono-v22-latin-700.woff2'), url('https://fonts.gstatic.com/s/robotomono/v22/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
 body {
     font-family: 'Roboto Mono', monospace;
     background: white;
+    scrollbar-width: none;
+    scrollbar-color: black;
 }
 
 .serif {

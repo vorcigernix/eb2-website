@@ -1,7 +1,7 @@
 <script>
 	import logo from '$lib/assets/logo_black.svg';
 	import cityscape from '$lib/assets/cityscape2.png';
-	//import moment from 'moment';
+	import { time } from '$lib/data.json';
 
 	const options = {
 		weekday: 'long',
@@ -13,8 +13,6 @@
 		second: 'numeric',
 		timeZone: 'Europe/Prague'
 	};
-	export let data;
-	//console.log(data);
 </script>
 
 <footer class="bg-black mx-auto">
@@ -30,12 +28,12 @@
 			</div>
 
 			<div class="md:inline-flex gap-10 sm:ml-auto sm:mt-0 mt-10 justify-center sm:justify-start">
-				<div>
+				<div class="flex justify-center">
 					<a class="text-black external" href="https://docs.ethbrno.cz/events/2022" rel="noopener noreferrer"
 						>Documentation
 					</a>
 				</div>
-				<div>
+				<div class="flex justify-center">
 					<a
 						class="text-black external"
 						href="https://twitter.com/ethbrno"
@@ -43,7 +41,7 @@
 						>Twitter
 					</a>
 				</div>
-				<div>
+				<div class="flex justify-center">
 					/join
 					<a class="text-black external" href="https://matrix.ethbrno.cz" rel="noopener noreferrer"
 						>#ethbrno:gwei.cz
@@ -55,7 +53,7 @@
 			<a href="https://git.gwei.cz/ethbrno/eb2-website" target="_blank" class="external"
 				>Source code</a
 			>
-			- Generated @ {new Date(data.time).toLocaleString('en-GB', options)} (UTC+2)
+			- Generated @ {new Date(time).toLocaleString('en-GB', options)} (UTC+2)
 		</div>
 	</div>
 </footer>
